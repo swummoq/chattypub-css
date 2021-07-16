@@ -1,6 +1,6 @@
-# {{DECKDECKGO_TITLE}}
+# ChattyPub CSS
 
-{{DECKDECKGO_DESCRIPTION}} 
+❤️💩🤘🙏😬💙👍😳🙈 
 
 ## Table of contents
 
@@ -11,15 +11,15 @@
 
 ## Slides
 
-🔗 [https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}}](https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}})
+🔗 [https://beta.deckdeckgo.io/heerko/chattypub-css/](https://beta.deckdeckgo.io/heerko/chattypub-css/)
 
 ## Usage
 
 💻 To get started locally with this presentation, clone this repo and install its dependencies.
 
 ```
-git clone {{DECKDECKGO_GITHUB_REPO_URL}}
-cd {{DECKDECKGO_GITHUB_REPO_NAME}}
+git clone https://github.com/swummoq/chattypub-css
+cd chattypub-css
 npm install
 ```
 
