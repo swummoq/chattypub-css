@@ -28,8 +28,8 @@ const config = {
     devServer: {
         open: true,
         port: 3000,
-        publicPath: '{{DECKDECKGO_BASE_HREF}}',
-        openPage: 'http://localhost:3000{{DECKDECKGO_BASE_HREF}}'
+        publicPath: '/heerko/chattypub-css/',
+        openPage: 'http://localhost:3000/heerko/chattypub-css/'
     }
 };
 
