@@ -57,6 +57,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?display=swap&amp;family=Josefin+Slab">
     <style>
         :root {
             background: #ffffff;
@@ -113,13 +114,137 @@
             </ion-header>
             <ion-content force-overscroll="false" style="position: relative; --overflow: hidden;">
                 <main>
-                    <deckgo-deck embedded="true" id="slider">
-                        <deckgo-slide-title style="--background:rgba(252,185,0,1);">
-                            <deckgo-reveal slot="title">
-                                <h1>ChattyPub CSS</h1>
-                            </deckgo-reveal>
-                            <h1 slot="content">❤️<span style="font-size: 30.2167px;">💩</span>🤘🙏😬💙👍😳🙈</h1>
+                    <deckgo-deck style="font-family: &quot;Josefin Slab&quot;, serif; --color:rgba(0,0,0,1); --background:rgba(252,185,0,1);" embedded="true" id="slider">
+                        <deckgo-slide-title>
+                            <h1 slot="title" style="color: rgb(255, 255, 255);">ChattyPub CSS</h1>
+                            <h1 slot="content">😬🐵🍏💙🙏☑︎🐶</h1>
                         </deckgo-slide-title>
+                        <deckgo-slide-split>
+                            <deckgo-highlight-code slot="start" line-numbers="false" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="html" terminal="carbon" theme="dracula"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2021.02.53.png?alt=media&amp;token=3ef5c7fe-742d-44ca-bdec-efeceb234144" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2021.02.53.png?alt=media&amp;token=3ef5c7fe-742d-44ca-bdec-efeceb234144" style="transform: rotate(0deg);"></deckgo-lazy-img>
+                        </deckgo-slide-split>
+                        <deckgo-slide-content>
+                            <deckgo-highlight-code slot="title" line-numbers="false" highlight-lines="7" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="html" terminal="carbon" theme="dracula"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <h3 slot="content" style="transform: rotate(0deg);">Heading 1</h3>
+                        </deckgo-slide-content>
+                        <deckgo-slide-content>
+                            <deckgo-highlight-code slot="title" line-numbers="false" highlight-lines="8 11-14" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="html" terminal="carbon" theme="dracula"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <h3 slot="content" style="transform: rotate(0deg);">Paragraph and an image</h3>
+                        </deckgo-slide-content>
+                        <deckgo-slide-title>
+                            <h3 slot="title"></h3>
+                            <deckgo-lazy-img slot="content" img-src="https://media.tenor.com/images/378b0a98a77c3236752f8b42084db6e0/tenor.gif" img-alt></deckgo-lazy-img>
+                        </deckgo-slide-title>
+                        <deckgo-slide-split>
+                            <deckgo-highlight-code slot="start" line-numbers="false" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="css" terminal="carbon" theme="dracula" highlight-lines="5-9"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;style&gt;
+    h1 {
+    color: red;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2021.37.01.png?alt=media&amp;token=211dbfce-659a-4fdf-bda1-bf849a498b3e" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2021.37.01.png?alt=media&amp;token=211dbfce-659a-4fdf-bda1-bf849a498b3e" style="transform: rotate(0deg);"></deckgo-lazy-img>
+                        </deckgo-slide-split>
+                        <deckgo-slide-split>
+                            <deckgo-highlight-code slot="start" line-numbers="false" highlight-lines="5-9" language="css" terminal="carbon" theme="dracula" style="width: 100%; padding: 0px; transform: rotate(0deg);"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;style&gt;
+    p {
+    border: 3px dashed red;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2022.16.32.png?alt=media&amp;token=63118ba2-33bb-4b22-a5ef-21a81bebea5c" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2022.16.32.png?alt=media&amp;token=63118ba2-33bb-4b22-a5ef-21a81bebea5c" style="transform: rotate(0deg);"></deckgo-lazy-img>
+                        </deckgo-slide-split>
+                        <deckgo-slide-title>
+                            <deckgo-highlight-code slot="title" line-numbers="false" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="css" terminal="carbon" theme="dracula"><code slot="code">&lt;style&gt;
+    😀 {
+    color: red;
+    }
+    &lt;/style&gt;</code></deckgo-highlight-code>
+                            <section slot="content" style="transform: rotate(0deg);"></section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-split>
+                            <deckgo-lazy-img slot="start" language="javascript" terminal="carbon" theme="dracula" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-18%20at%2021.59.52.png?alt=media&amp;token=a52fe85f-a216-472b-8cd0-0868611c016a" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-18%20at%2021.59.52.png?alt=media&amp;token=a52fe85f-a216-472b-8cd0-0868611c016a"></deckgo-lazy-img>
+                            <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-18%20at%2021.58.22.png?alt=media&amp;token=66fbbad6-e9fa-47bb-a5b1-de834b5dcf97" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-18%20at%2021.58.22.png?alt=media&amp;token=66fbbad6-e9fa-47bb-a5b1-de834b5dcf97"></deckgo-lazy-img>
+                        </deckgo-slide-split>
                     </deckgo-deck>
                 </main>
                 <deckgo-remote></deckgo-remote><button id="previous" class="navigation ion-activatable">
