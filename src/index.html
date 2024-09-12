@@ -1,42 +1,26 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
-
-    <base href="/heerko/chattypub-css/"/>
-
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    img-src 'self' data: https:;
-    style-src 'self' 'unsafe-inline' https://cdn.firebase.com https://fonts.googleapis.com;
-    font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
-    script-src 'self' blob: {{DECKDECKGO_EXTRA_SHAS}} https://cdn.firebase.com https://apis.google.com https://unpkg.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net;
-    connect-src 'self' https://deckdeckgo.com/ https://app.deckdeckgo.com/ wss://api.deckdeckgo.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-beta.appspot.com/ https://www.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://raw.githubusercontent.com/PrismJS/ https://raw.githubusercontent.com/deckgo/ https://api.tenor.com/;
-    frame-src https:">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,viewport-fit=cover">
+    <base href="/heerko/chattypub-css/">
     <title>ChattyPub CSS</title>
-
     <meta property="og:site_name" content="ChattyPub CSS">
     <meta property="og:title" content="ChattyPub CSS">
-
-    <meta name="author" content="{{DECKDECKGO_AUTHOR}}">
-
+    <meta name="author" content="heerko">
     <meta name="description" content="❤️💩🤘🙏😬💙👍😳🙈">
-
     <meta property="og:description" content="❤️💩🤘🙏😬💙👍😳🙈">
     <meta property="og:site_name" content="ChattyPub CSS">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://beta.deckdeckgo.io/heerko/chattypub-css/">
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/{{DECKDECKGO_USER_ID}}%2Fpresentations%2F{{DECKDECKGO_DECKNAME}}%2Fdeckdeckgo.png?alt=media">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fpresentations%2Fchattypub-css%2Fdeckdeckgo.png?alt=media">
     <meta property="og:image:type" content="image/png">
-
     <meta name="twitter:site" content="@deckdeckgo">
     <meta name="twitter:title" content="ChattyPub CSS">
     <meta name="twitter:description" content="❤️💩🤘🙏😬💙👍😳🙈">
-    <meta name="twitter:image:src" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/{{DECKDECKGO_USER_ID}}%2Fpresentations%2F{{DECKDECKGO_DECKNAME}}%2Fdeckdeckgo.png?alt=media">
+    <meta name="twitter:image:src" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fpresentations%2Fchattypub-css%2Fdeckdeckgo.png?alt=media">
     <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/heerko/chattypub-css/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/heerko/chattypub-css/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/heerko/chattypub-css/assets/favicon/favicon-16x16.png">
@@ -44,7 +28,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-config" content="/heerko/chattypub-css/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', async () => {
@@ -64,22 +47,17 @@
             });
         }
     </script>
-
     <script>
         window.ROOM_NAME = 'ChattyPub CSS';
         window.EMBEDDED = false;
         window.PENDING_REMOTE_REQUESTS = [];
         window.REMOTE_STATE = 0;
     </script>
-
     <link rel="manifest" href="manifest.json">
-
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="msapplication-tap-highlight" content="no">
-
-    {{DECKDECKGO_HEAD_EXTRA}}
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?display=swap&amp;family=Josefin+Slab">
     <style>
         :root {
             background: #ffffff;
@@ -92,12 +70,13 @@
             --ion-text-color: black;
         }
 
-        /* Until Web Components are loaded, don't display content */
+        /* Until Web Components are loaded, don&#39;t display content */
         body {
             background: #ffffff;
         }
 
-        ion-app.loading, ion-app.loading a {
+        ion-app.loading,
+        ion-app.loading a {
             color: transparent;
         }
 
@@ -109,87 +88,195 @@
             display: none;
         }
     </style>
-
+    <script defer="defer" src="main.9fe753fe283bb4123e10.js?6a18cbb60862a26aee79"></script>
 </head>
+
 <body>
-
-<ion-app class="loading">
-
-    <ion-menu id="ion-menu" side="start" type="overlay" swipeGesture="false" content-id="main">
-        <ion-content>
-            <deckgo-chapters></deckgo-chapters>
-        </ion-content>
-    </ion-menu>
-
-    <div class="ion-page" id="main">
-        <ion-header>
-            <ion-toolbar color="dark">
-                <ion-buttons slot="start">
-                    <ion-menu-button></ion-menu-button>
-                </ion-buttons>
-                <ion-title>ChattyPub CSS</ion-title>
-                <ion-buttons slot="end">
-                    <ion-button id="deckMenu"><ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/ellipsis-vertical.svg"></ion-icon></ion-button>
-                </ion-buttons>
-            </ion-toolbar>
-        </ion-header>
-
-        <ion-content force-overscroll="false" style="position: relative; --overflow: hidden;">
-            <main>
-                <deckgo-deck id="slider" embedded="true">
-
-                </deckgo-deck>
-            </main>
-
-            <deckgo-remote></deckgo-remote>
-
-            <button id="previous" class="navigation ion-activatable">
+    <ion-app class="loading">
+        <ion-menu id="ion-menu" side="start" type="overlay" swipegesture="false" content-id="main">
+            <ion-content>
+                <deckgo-chapters></deckgo-chapters>
+            </ion-content>
+        </ion-menu>
+        <div class="ion-page" id="main">
+            <ion-header>
+                <ion-toolbar color="dark">
+                    <ion-buttons slot="start">
+                        <ion-menu-button></ion-menu-button>
+                    </ion-buttons>
+                    <ion-title>ChattyPub CSS</ion-title>
+                    <ion-buttons slot="end">
+                        <ion-button id="deckMenu">
+                            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/ellipsis-vertical.svg"></ion-icon>
+                        </ion-button>
+                    </ion-buttons>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content force-overscroll="false" style="position: relative; --overflow: hidden;">
+                <main>
+                    <deckgo-deck style="font-family: &quot;Josefin Slab&quot;, serif; --color:rgba(0,0,0,1); --background:rgba(252,185,0,1);" embedded="true" id="slider">
+                        <deckgo-slide-title>
+                            <h1 slot="title" style="color: rgb(255, 255, 255);">ChattyPub CSS</h1>
+                            <h1 slot="content">😬🐵🍏💙🙏☑︎🐶</h1>
+                        </deckgo-slide-title>
+                        <deckgo-slide-split>
+                            <deckgo-highlight-code slot="start" line-numbers="false" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="html" terminal="carbon" theme="dracula"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2021.02.53.png?alt=media&amp;token=3ef5c7fe-742d-44ca-bdec-efeceb234144" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2021.02.53.png?alt=media&amp;token=3ef5c7fe-742d-44ca-bdec-efeceb234144" style="transform: rotate(0deg);"></deckgo-lazy-img>
+                        </deckgo-slide-split>
+                        <deckgo-slide-content>
+                            <deckgo-highlight-code slot="title" line-numbers="false" highlight-lines="7" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="html" terminal="carbon" theme="dracula"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <h3 slot="content" style="transform: rotate(0deg);">Heading 1</h3>
+                        </deckgo-slide-content>
+                        <deckgo-slide-content>
+                            <deckgo-highlight-code slot="title" line-numbers="false" highlight-lines="8 11-14" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="html" terminal="carbon" theme="dracula"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <h3 slot="content" style="transform: rotate(0deg);">Paragraph and an image</h3>
+                        </deckgo-slide-content>
+                        <deckgo-slide-title>
+                            <h3 slot="title"></h3>
+                            <deckgo-lazy-img slot="content" img-src="https://media.tenor.com/images/378b0a98a77c3236752f8b42084db6e0/tenor.gif" img-alt></deckgo-lazy-img>
+                        </deckgo-slide-title>
+                        <deckgo-slide-split>
+                            <deckgo-highlight-code slot="start" line-numbers="false" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="css" terminal="carbon" theme="dracula" highlight-lines="5-9"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;style&gt;
+    h1 {
+    color: red;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2021.37.01.png?alt=media&amp;token=211dbfce-659a-4fdf-bda1-bf849a498b3e" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2021.37.01.png?alt=media&amp;token=211dbfce-659a-4fdf-bda1-bf849a498b3e" style="transform: rotate(0deg);"></deckgo-lazy-img>
+                        </deckgo-slide-split>
+                        <deckgo-slide-split>
+                            <deckgo-highlight-code slot="start" line-numbers="false" highlight-lines="5-9" language="css" terminal="carbon" theme="dracula" style="width: 100%; padding: 0px; transform: rotate(0deg);"><code slot="code">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+    &lt;style&gt;
+    p {
+    border: 3px dashed red;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;My article&lt;/h1&gt;
+    &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid igitur
+    dubitamus in tota eius natura quaerere quid sit effectum?
+    &lt;/p&gt;
+    &lt;p&gt;
+    &lt;img src=&quot;baby_sugarglider.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></deckgo-highlight-code>
+                            <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2022.16.32.png?alt=media&amp;token=63118ba2-33bb-4b22-a5ef-21a81bebea5c" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-17%20at%2022.16.32.png?alt=media&amp;token=63118ba2-33bb-4b22-a5ef-21a81bebea5c" style="transform: rotate(0deg);"></deckgo-lazy-img>
+                        </deckgo-slide-split>
+                        <deckgo-slide-title>
+                            <deckgo-highlight-code slot="title" line-numbers="false" style="width: 100%; padding: 0px; transform: rotate(0deg);" language="css" terminal="carbon" theme="dracula"><code slot="code">&lt;style&gt;
+    😀 {
+    color: red;
+    }
+    &lt;/style&gt;</code></deckgo-highlight-code>
+                            <section slot="content" style="transform: rotate(0deg);"></section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-split>
+                            <deckgo-lazy-img slot="start" language="javascript" terminal="carbon" theme="dracula" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-18%20at%2021.59.52.png?alt=media&amp;token=a52fe85f-a216-472b-8cd0-0868611c016a" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-18%20at%2021.59.52.png?alt=media&amp;token=a52fe85f-a216-472b-8cd0-0868611c016a"></deckgo-lazy-img>
+                            <deckgo-lazy-img slot="end" img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-18%20at%2021.58.22.png?alt=media&amp;token=66fbbad6-e9fa-47bb-a5b1-de834b5dcf97" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/akppv3owSqaY3AdtwczoPjfzgTg1%2Fassets%2Fimages%2FScreenshot%202021-07-18%20at%2021.58.22.png?alt=media&amp;token=66fbbad6-e9fa-47bb-a5b1-de834b5dcf97"></deckgo-lazy-img>
+                        </deckgo-slide-split>
+                    </deckgo-deck>
+                </main>
+                <deckgo-remote></deckgo-remote><button id="previous" class="navigation ion-activatable">
+                    <ion-ripple-effect></ion-ripple-effect>
+                    <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/chevron-back.svg" aria-label="Previous slide"></ion-icon>
+                </button> <button id="next" class="navigation ion-activatable">
+                    <ion-ripple-effect></ion-ripple-effect>
+                    <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/chevron-forward.svg" aria-label="Next slide"></ion-icon>
+                </button>
+            </ion-content>
+        </div>
+        <ion-fab vertical="top" horizontal="end" slot="fixed" id="fullscreen-menu"><button id="slidePicker" class="navigation ion-activatable" aria-label="Jump to a particular slide">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/chevron-back.svg" aria-label="Previous slide"></ion-icon>
-            </button>
-
-            <button id="next" class="navigation ion-activatable">
+                <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/list.svg" aria-label="Jump to a particular slide"></ion-icon>
+            </button> <button id="fullScreen" class="navigation ion-activatable hide-on-mobile" aria-label="Full screen">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/chevron-forward.svg" aria-label="Next slide"></ion-icon>
-            </button>
-
-        </ion-content>
-    </div>
-
-    <ion-fab vertical="top" horizontal="end" slot="fixed" id="fullscreen-menu">
-        <button id="slidePicker" class="navigation ion-activatable" aria-label="Jump to a particular slide">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/list.svg" aria-label="Jump to a particular slide"></ion-icon>
-        </button>
-
-        <button id="fullScreen" class="navigation ion-activatable hide-on-mobile" aria-label="Full screen">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/contract.svg" aria-label="Exit full screen"></ion-icon>
-        </button>
-
-        <button id="remote" class="navigation ion-activatable">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/phone-portrait.svg" aria-label="Open Remote"></ion-icon>
-        </button>
-    </ion-fab>
-
-    <!-- Ionic components anchors -->
-    <ion-popover-controller></ion-popover-controller>
-    <ion-modal-controller></ion-modal-controller>
-    <ion-alert-controller></ion-alert-controller>
-
-    <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
-        <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/twitter.svg" aria-label="Twitter" slot="twitter" style="color: #00aced; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/linkedin.svg" aria-label="Linkedin" slot="linkedin" style="color: #0077b5; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/mail.svg" aria-label="Email" slot="email" style="color: #ff8ea3; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/whatsapp.svg" aria-label="WhatsApp" slot="whatsapp" style="color: #25D366; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/hackernews.svg" aria-label="Hacker News" slot="hackernews" style="color: #ff6000; font-size: 1.6rem; display: block;"></ion-icon>
-    </web-social-share>
-</ion-app>
-
-<noscript>
-    Please enable Javascript to access this presentation.
-</noscript>
-
+                <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/contract.svg" aria-label="Exit full screen"></ion-icon>
+            </button> <button id="remote" class="navigation ion-activatable">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/phone-portrait.svg" aria-label="Open Remote"></ion-icon>
+            </button></ion-fab>
+        <ion-popover-controller></ion-popover-controller>
+        <ion-modal-controller></ion-modal-controller>
+        <ion-alert-controller></ion-alert-controller>
+        <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
+            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/twitter.svg" aria-label="Twitter" slot="twitter" style="color: #00aced; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/linkedin.svg" aria-label="Linkedin" slot="linkedin" style="color: #0077b5; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/mail.svg" aria-label="Email" slot="email" style="color: #ff8ea3; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/whatsapp.svg" aria-label="WhatsApp" slot="whatsapp" style="color: #25D366; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/heerko/chattypub-css/assets/icons/ionicons/hackernews.svg" aria-label="Hacker News" slot="hackernews" style="color: #ff6000; font-size: 1.6rem; display: block;"></ion-icon>
+        </web-social-share>
+    </ion-app><noscript>Please enable Javascript to access this presentation.</noscript>
 </body>
+
 </html>
